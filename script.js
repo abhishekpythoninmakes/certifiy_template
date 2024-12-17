@@ -14,7 +14,7 @@ document.querySelectorAll('.select-option').forEach(button => {
         // Add selected class to the clicked button
         button.classList.add('text-[#e5c200]', 'underline', 'font-bold');
         
-        // Show the corresponding content (you can modify the logic to show content dynamically)
+        // Show the corresponding content 
         document.querySelector('.selected-option-content').classList.remove('hidden');
     });
 });

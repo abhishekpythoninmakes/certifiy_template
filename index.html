@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sahih.ae - Digitize Your
     Credentials</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="/images/faviconcmprsd.png">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
@@ -257,22 +257,22 @@
     <!-- Options Grid -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-12">
         <!-- Option 1: Companies -->
-        <button class="option-button  py-4 px-6 text-lg font-medium rounded-lg  select-option">
+        <button class="option-button py-4 px-6 text-lg font-semibold rounded-lg select-option">
             Companies
         </button>
 
         <!-- Option 2: Partners -->
-        <button class="option-button  py-4 px-6 text-lg font-medium rounded-lg  select-option">
+        <button class="option-button py-4 px-6 text-lg font-semibold rounded-lg select-option">
             Partners
         </button>
 
         <!-- Option 3: Educational Institutions -->
-        <button class="option-button  py-4 px-6 text-lg font-medium rounded-lg  select-option">
+        <button class="option-button py-4 px-6 text-lg font-semibold rounded-lg select-option">
             Educational Institutions
         </button>
 
         <!-- Option 4: Brands -->
-        <button class="option-button  py-4 px-6 text-lg font-medium rounded-lg  select-option">
+        <button class="option-button py-4 px-6 text-lg font-semibold rounded-lg select-option">
             Brands
         </button>
     </div>
@@ -280,34 +280,33 @@
     <!-- Content for selected option (hidden by default) -->
     <div class="selected-option-content hidden">
         <!-- Image and text block -->
-        <div class="flex items-center justify-between mb-12">
-            <div class="w-1/3">
-                <img src="/images/company-image.png" alt="Companies" class="w-full h-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between mb-8 md:mb-12">
+            <div class="w-full md:w-1/3">
+                <img src="/images/img who can.png" alt="Companies" class="w-full h-auto">
             </div>
-            <div class="w-2/3 pl-8">
+            <div class="w-full md:w-2/3 pl-0 md:pl-8 mt-4 md:mt-0">
                 <h3 class="text-2xl font-semibold mb-4">Streamline Credential Management and Verification</h3>
-                <p class="text-lg text-gray-600">Our platform helps you manage and verify credentials seamlessly, reducing paperwork and increasing efficiency for your team.</p>
-            </div>
-        </div>
+                
+                <!-- Options with Images as Checkboxes -->
+                <div class="flex flex-col gap-6">
+                    <!-- Option 1 -->
+                    <div class="flex items-center space-x-4">
+                        <img src="/images/checkbox.png" alt="Option 1" class="w-6 h-6 cursor-pointer">
+                        <label for="option1" class="text-lg">Option 1 Content</label>
+                    </div>
 
-        <!-- Options with Checkboxes -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <!-- Option 1 -->
-            <div class="flex items-center space-x-4">
-                <input type="checkbox" class="checkbox w-6 h-6 text-green-500 border-gray-300 rounded-md" id="option1">
-                <label for="option1" class="text-lg">Option 1 Content</label>
-            </div>
+                    <!-- Option 2 -->
+                    <div class="flex items-center space-x-4">
+                        <img src="/images/checkbox.png" alt="Option 2" class="w-6 h-6 cursor-pointer">
+                        <label for="option2" class="text-lg">Option 2 Content</label>
+                    </div>
 
-            <!-- Option 2 -->
-            <div class="flex items-center space-x-4">
-                <input type="checkbox" class="checkbox w-6 h-6 text-green-500 border-gray-300 rounded-md" id="option2">
-                <label for="option2" class="text-lg">Option 2 Content</label>
-            </div>
-
-            <!-- Option 3 -->
-            <div class="flex items-center space-x-4">
-                <input type="checkbox" class="checkbox w-6 h-6 text-green-500 border-gray-300 rounded-md" id="option3">
-                <label for="option3" class="text-lg">Option 3 Content</label>
+                    <!-- Option 3 -->
+                    <div class="flex items-center space-x-4">
+                        <img src="/images/checkbox.png" alt="Option 3" class="w-6 h-6 cursor-pointer">
+                        <label for="option3" class="text-lg">Option 3 Content</label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
