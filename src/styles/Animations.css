@@ -1,0 +1,55 @@
+/* Container for the marquee */
+.overflow-hidden {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  /* Marquee wrapper */
+  .marquee {
+    display: flex;
+    gap: 6rem; /* Add space between the cards */
+    animation: marquee 20s linear infinite;
+    will-change: transform;
+  }
+  
+  /* Logo cards with rectangle and shadow */
+  .logo-card {
+    flex: 0 0 auto; /* Prevent shrinking and ensure proper spacing */
+    width: 180px;
+    height: 100px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 5px rgba(199, 181, 107, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo-card img {
+    max-width: 80%; /* Adjust size of the logos */
+    max-height: 80%; /* Prevent overflow of images */
+    object-fit: contain;
+  }
+  
+  /* Keyframes for continuous scrolling */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Duplicate marquee for seamless effect */
+  .marquee:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+  
+  
+  

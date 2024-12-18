@@ -14,15 +14,15 @@ const optionContent = {
         imageSrc: '/images/img who can.png',
         details: `
             <div class="flex items-center space-x-4">
-                <img src="/images/checkbox.png" alt="Option 1" class="w-6 h-6 cursor-pointer">
+                <img src="/images/checkbox.png" alt="Option 1" class="w-6 h-6 cursor-pointer" loading="lazy">
                 <label for="option1" class="text-lg">Custom certificate designs</label>
             </div>
             <div class="flex items-center space-x-4">
-                <img src="/images/checkbox.png" alt="Option 2" class="w-6 h-6 cursor-pointer">
+                <img src="/images/checkbox.png" alt="Option 2" class="w-6 h-6 cursor-pointer" loading="lazy">
                 <label for="option2" class="text-lg">Bulk issuance capabilities</label>
             </div>
             <div class="flex items-center space-x-4">
-                <img src="/images/checkbox.png" alt="Option 3" class="w-6 h-6 cursor-pointer">
+                <img src="/images/checkbox.png" alt="Option 3" class="w-6 h-6 cursor-pointer" loading="lazy">
                 <label for="option3" class="text-lg">Comprehensive analytics</label>
             </div>`
     },
