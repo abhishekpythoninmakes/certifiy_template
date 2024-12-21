@@ -1,3 +1,4 @@
+//for resposive screen on navbar 
 // Menu toggle functionality
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');

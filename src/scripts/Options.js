@@ -1,10 +1,8 @@
-
-
-// Option content for each selection
+// Option content for each selection in the who can benefit section
 const optionContent = {
     companies: {
         title: 'Streamline Credential Management and Verification',
-        imageSrc: '/images/img who can.png',
+        imageSrc: '/images/companyMeeting.png',
         details: `
             <div class="flex items-center space-x-4">
                 <img src="/images/checkbox.png" alt="Option 1" class="w-6 h-6 cursor-pointer" loading="lazy">
@@ -21,11 +19,11 @@ const optionContent = {
     },
     partners: {
         title: 'Expand your revenue and service offerings',
-        imageSrc: '/images/partnerimg.png',
+        imageSrc: '/images/partnerImg.png',
         details: `
             <div class="flex items-center space-x-4">
                 <img src="/images/checkbox.png" alt="Option 1" class="w-6 h-6 cursor-pointer">
-                <label for="option1" class="text-lg">Integrated partnership  program</label>
+                <label for="option1" class="text-lg">Integrated partnership program</label>
             </div>
             <div class="flex items-center space-x-4">
                 <img src="/images/checkbox.png" alt="Option 2" class="w-6 h-6 cursor-pointer">
@@ -72,6 +70,15 @@ const optionContent = {
     }
 };
 
+// Function to check WebP support
+function isWebPSupported() {
+    const canvas = document.createElement('canvas');
+    if (canvas.toDataURL) {
+        return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+    }
+    return false;
+}
+
 // Function to show content for a selected option
 function showOptionContent(optionKey) {
     const content = optionContent[optionKey];
@@ -80,8 +87,12 @@ function showOptionContent(optionKey) {
     const optionTitle = document.getElementById('optionTitle');
     const optionDetails = document.getElementById('optionDetails');
     
+    // Check if WebP is supported and adjust image source accordingly
+    const imageFormat = isWebPSupported() ? '.webp' : '.png'; // Default to PNG if WebP is not supported
+    const imageSrc = content.imageSrc.replace('.png', imageFormat); // Change file extension
+
     // Update the content
-    optionImage.src = content.imageSrc;
+    optionImage.src = imageSrc; // Use the correct image format
     optionTitle.textContent = content.title;
     optionDetails.innerHTML = content.details;
 

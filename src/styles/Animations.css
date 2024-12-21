@@ -24,96 +24,79 @@
 
 
 
-/* Container for the marquee */
+
+
 .overflow-hidden {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    padding: 1rem 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* Marquee wrapper */
+.marquee {
+  display: flex;
+  gap: 6rem; /* Add space between the cards */
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+}
+
+/* Logo cards with rectangle and shadow */
+.logo-card {
+  flex: 0 0 auto; /* Prevent shrinking and ensure proper spacing */
+  width: 180px;
+  height: 100px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px 5px rgba(199, 181, 107, 0.322);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-card img {
+  max-width: 80%; /* Adjust size of the logos */
+  max-height: 80%; /* Prevent overflow of images */
+  object-fit: contain;
+}
+
+/* Keyframes for continuous scrolling */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
-  
-  /* Marquee wrapper */
-  .marquee {
-    display: flex;
-    gap: 6rem; /* Add space between the cards */
-    animation: marquee 20s linear infinite;
-    will-change: transform;
+  100% {
+    transform: translateX(-100%);
   }
-  
-  /* Logo cards with rectangle and shadow */
-  .logo-card {
-    flex: 0 0 auto; /* Prevent shrinking and ensure proper spacing */
-    width: 180px;
-    height: 100px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px 5px rgba(199, 181, 107, 0.322);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .logo-card img {
-    max-width: 80%; /* Adjust size of the logos */
-    max-height: 80%; /* Prevent overflow of images */
-    object-fit: contain;
-  }
-  
-  /* Keyframes for continuous scrolling */
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  /* Duplicate marquee for seamless effect */
-  .marquee:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-  }
-  
+}
+
+/* Duplicate marquee for seamless effect */
+.marquee:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+
 
 
 
 /* testimonial */
 /* General Styles for Testimonials */
-.testimonial {
-  opacity: 0.5;
-  transform: scale(0.5);
-  filter: blur(5px);
-  transition: all 0.5s ease;
-  transition-property: opacity, transform, filter;
-  display: flex;
-  justify-content: center;
-  
-}
-
-/* Active (Center) Testimonial */
-.testimonial.active {
-  opacity: 1;
-  transform: scale(1);
-  filter: blur(0);
-}
-
-/* Next and Previous (Left and Right) Testimonials */
-.testimonial.prev, .testimonial.next {
-  opacity: 0.5;
-  transform: scale(0.8);
-  filter: blur(5px);
-}
-
-/* Slider Container */
 #reviewSlider {
+  width: 40%;
   display: flex;
-  align-items: center;
-  justify-content: center; /* Keep the testimonials centered */
-  width: 100%;
-  /* overflow: hidden;          */
-  /* Hide overflow to keep everything within bounds */
-  position: relative;
+  height: auto; /* Change from 500px to auto */
+}
+
+.testimonial {
+  min-width: 100%;
+}
+
+.testimonial {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial:hover {
+  transform: translateY(-10px);
 }
