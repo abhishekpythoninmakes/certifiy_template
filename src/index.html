@@ -7,12 +7,14 @@
   <link rel="icon" type="image/x-icon" href="/images/faviconcmprsd.png">
 
   <!-- CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
-  <!-- <link href="dist/main.css" rel="stylesheet">  -->
+  <!-- global postcss configuration -->
+  <link rel="stylesheet" href="/dist/main.css">
 
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/Animations.css">
+  <link rel="stylesheet" href="styles/sliderTestimonial.css">
 </head>
 
 <body class="bg-white text-black">
@@ -348,23 +350,66 @@
   </div>
 </div>
 
-<!-- User Review Section -->
-<div class="mt-16 px-4">
-  <div class="max-w-lg w-full h-auto mx-auto border border-amber-100 shadow-xl shadow-[#c7b56b52] rounded-lg p-6 relative">
-    <!-- Profile image -->
-    <img src="/images/testimonial-profilepicture.png" alt="Author profile image" 
-         class="w-20 h-20 rounded-full absolute top-[-38px] left-1/2 transform -translate-x-1/2 border-4 border-white">
-    <div class="mt-8">
-      <p class="text-base md:text-lg italic text-center">
-        "Sahih.ae has revolutionized how we manage and validate professional credentials. The platform is intuitive, secure, and has significantly streamlined our certification process."
-      </p>
+
+
+<!-- testimonial -->
+
+<div class="relative w-full overflow-hidden">
+  <!-- Slider Container (centered) -->
+  <div id="reviewSlider" class="flex items-center justify-center transition-transform duration-500 ease-in-out">
+    <!-- Box 1 -->
+    <div class="testimonial w-1/3 flex-shrink-0 px-4 text-center">
+      <div class="bg-white shadow-md rounded-lg p-6 relative">
+        <img
+          src="/images/testimonial-profilepicture.png"
+          alt="Author profile"
+          class="w-16 h-16 rounded-full border-4 border-gray-200 mx-auto -mt-8"
+        />
+        <p class="italic text-gray-700 mt-4">
+          "This platform made it easier for us to verify credentials."
+        </p>
+        <p class="mt-4 font-semibold">John Doe</p>
+        <p class="text-sm text-gray-500">Founder, WebTech Solutions</p>
+      </div>
     </div>
-    <div class="mt-4 text-center">
-      <p class="font-semibold mb-1 text-sm md:text-base">Sarah Johnson</p>
-      <p class="text-xs md:text-sm text-gray-600">HR Director, TechInnovate Solutions</p>
+
+    <!-- Box 2 -->
+    <div class="testimonial w-1/3 flex-shrink-0 px-4 text-center">
+      <div class="bg-white shadow-md rounded-lg p-6 relative">
+        <img
+          src="/images/testimonial-profilepicture.png"
+          alt="Author profile"
+          class="w-16 h-16 rounded-full border-4 border-gray-200 mx-auto -mt-8"
+        />
+        <p class="italic text-gray-700 mt-4">
+          "The verification process has never been so easy and seamless."
+        </p>
+        <p class="mt-4 font-semibold">Sarah Johnson</p>
+        <p class="text-sm text-gray-500">HR Director, TechInnovate Solutions</p>
+      </div>
     </div>
+
+    <!-- Box 3 -->
+    <div class="testimonial w-1/3 flex-shrink-0 px-4 text-center">
+      <div class="bg-white shadow-md rounded-lg p-6 relative">
+        <img
+          src="/images/testimonial-profilepicture.png"
+          alt="Author profile"
+          class="w-16 h-16 rounded-full border-4 border-gray-200 mx-auto -mt-8"
+        />
+        <p class="italic text-gray-700 mt-4">
+          "Amazing platform for managing and validating credentials!"
+        </p>
+        <p class="mt-4 font-semibold">Emily Watson</p>
+        <p class="text-sm text-gray-500">HR Manager, GlobalTech Inc.</p>
+      </div>
+    </div>
+
+    <!-- Add More Testimonials -->
   </div>
 </div>
+
+
 
 <!-- Trusted by Leading Companies -->
 <h3 class="text-3xl mt-16 font-semibold">Trusted by Leading Companies Worldwide</h3>
@@ -472,32 +517,32 @@
           <p class="block mb-1 text-base font-semibold text-slate-800">
           </p>
           <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+            <a href="#" class="block text-slate-900 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
               Home
             </a>
           </li>
           <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+            <a href="#" class="block text-slate-900 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
               About us
             </a>
           </li>
           <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+            <a href="#" class="block text-slate-900 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
               Feature
             </a>
           </li>
           <li>
-            <a href="#" class="block text-slate-600 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+            <a href="#" class="block text-slate-900 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
               Pricing
             </a>
           </li>
           <li>
-            <a href="#" class="block text-slate-700 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+            <a href="#" class="block text-slate-900 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
               Verify Certificate
             </a>
           </li>
           <li>
-            <a href="#" class="block text-slate-700 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
+            <a href="#" class="block text-slate-900 py-1 hover:text-slate-500 focus:text-slate-500 text-sm">
             Contact Us            
             </a>
           </li>
@@ -532,7 +577,7 @@
         <a href="https://sahih.ae">sahih.ae</a>. All
         Rights Reserved.
       </p>
-      <div class="flex gap-4 text-slate-600 sm:justify-center">
+      <div class="flex gap-4 text-slate-900 sm:justify-center">
         <a href="#" class="block transition-opacity text-inherit hover:opacity-80">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path fill-rule="evenodd"
