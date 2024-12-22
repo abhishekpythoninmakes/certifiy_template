@@ -1,4 +1,5 @@
 /* hero animation */
+/* used on the pendulum movement of hero section image */
 @keyframes shake {
   0% {
     transform: translateX(0);
@@ -17,15 +18,39 @@
   }
 }
 
+
+
+
+
+
+/*shake animation for the button start issue certificate in home hero section*/
 .animate-shake {
   animation: shake 3s ease-in-out infinite;
 }
 
+.button-with-animation {
+  display: flex;
+  align-items: center;
+  animation: move 1s ease-in-out infinite;
+  rotate: 270deg;
+}
 
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
 
+.icon {
+  margin-left: 8px;
+}
+/*.........................................*/
 
-
-
+/* marquee effect is used on the Trusted by Leading Companies company 
+logo auto scroll in horizontal direction */
 .overflow-hidden {
   overflow: hidden;
   position: relative;
@@ -79,24 +104,3 @@
 }
 
 
-
-
-
-/* testimonial */
-/* General Styles for Testimonials */
-#reviewSlider {
-  width: 40%;
-  display: flex;
-  height: auto; /* Change from 500px to auto */
-}
-
-.testimonial {
-  min-width: 100%;
-}
-
-.testimonial {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.testimonial:hover {
-  transform: translateY(-10px);
-}
