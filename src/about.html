@@ -7,8 +7,51 @@
     <!-- link to dist folder -->
     <link rel="stylesheet" href="/dist/main.css">
 
-</head>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/Animations.css">
+    <script src="scripts/loadComponent.js" defer></script>
+  </head>
 <body>
-    <h1 class="text-5xl text-yellow-600">Welcome to the About Page</h1>
+    <!-- imported navbar -->
+    <div id="navbar"></div>
+
+    <section class="flex flex-col md:flex-row items-center justify-between px-8 py-16 bg-gray-50">
+        <!-- Left Side: Text and Buttons -->
+        <div class="text-center md:text-left md:w-1/2">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight whitespace-nowrap pb-4">
+                Empowering <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e3b607] to-[#a68403]">Credentials</span>, Building 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e3b607] to-[#a68403]">Trust</span>
+            </h1>
+            <p class="text-2xl pb-4">Learn more about our mission, journey, and the people behind the platform.</p>
+
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 pb-4 pt-6 relative z-10">
+                <div class="relative w-full md:w-auto">
+                    <button class="w-full md:w-auto px-6 py-3 bg-gradient-to-r from-[#e5c200] to-[#b49900] rounded-md md:hover:opacity-90 relative z-10 text-center">
+                        Contact Us
+                    </button>
+                </div>
+                <button class="w-full md:w-auto px-6 py-3 border border-[#d7b42b] text-black rounded-md md:hover:bg-[#ab9025] md:duration-150 text-center">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="mt-24 md:mt-24 md:w-1/2 flex justify-center md:justify-end">
+            <picture>
+                <source srcset="/svg/about-page-section-1-img.svg" type="image/svg+xml">
+                <source srcset="/images/about-page-section-1-img.jpg" type="image/jpeg">
+                <img
+                    src="/images/about-page-section-1-img.jpg"
+                    alt="Hero section"
+                    class="max-w-[70%] md:max-w-[70%] lg:max-w-[70%] transform translate-x-4"
+                />
+            </picture>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script type="module" src="scripts/Script.js"></script>
+
 </body>
 </html>

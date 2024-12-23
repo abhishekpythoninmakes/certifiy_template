@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="/dist/main.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/Animations.css">  
+    <script src="scripts/loadComponent.js" defer></script>
+</head>
+<body>
+    <div id="navbar" class="mb-8"></div>
+
+    <section class="py-8 px-6 md:px-16">
+        <div class="flex justify-center items-center min-h-screen"> <!-- Ensure it takes full screen height -->
+            <!-- Register Container -->
+            <div class="flex flex-col sm:flex-row w-full max-w-5xl h-auto bg-[#F6F5F5] rounded-xl shadow-lg shadow-amber-100">
+
+                <!-- Left Side: Image -->
+                <div class="w-full sm:w-1/2 bg-cover bg-center rounded-t-xl sm:rounded-l-xl bg-white flex justify-center items-center">
+                    <img src="/svg/loginpage-image.svg" alt="login-page-image" class="w-full sm:w-4/5">
+                </div>
+
+                <!-- Right Side: Registration Form -->
+                <div class="w-full sm:w-1/2 px-6 py-12 flex flex-col justify-center items-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#e5c200] to-[#937601] mb-4 text-center w-full">Create Your Account</h2>
+                    <p class="text-base sm:text-lg text-gray-600 mb-6 text-center w-full">Register to get started and manage your company’s certificates.</p>
+
+                    <form action="/register" method="POST" class="space-y-4 w-3/4 max-w-md">
+                        <!-- Company Name -->
+                        <input type="text" placeholder="Enter your company Name" required class="w-full p-2.5 border border-[#BA9503] rounded-md text-lg placeholder:text-sm focus:outline-none focus:ring-1 focus:ring-[#BA9503]"/>
+
+                        <!-- Full Name -->
+                        <input type="text" placeholder="Enter Contact person's Name" required class="w-full p-2.5 border border-[#BA9503] rounded-md text-lg placeholder:text-sm focus:outline-none focus:ring-1 focus:ring-[#BA9503]"/>
+
+                        <!-- Email Address -->
+                        <input type="email" placeholder="Enter Email Address" required class="w-full p-2.5 border border-[#BA9503] rounded-md text-lg placeholder:text-sm focus:outline-none focus:ring-1 focus:ring-[#BA9503]"/>
+
+                        <!-- Phone Number -->
+                        <input type="tel" placeholder="Enter Phone Number" required class="w-full p-2.5 border border-[#BA9503] rounded-md text-lg placeholder:text-sm focus:outline-none focus:ring-1 focus:ring-[#BA9503]"/>
+
+                        <!-- Password -->
+                        <input type="password" placeholder="Create Password" required class="w-full p-2.5 border border-[#BA9503] rounded-md text-lg placeholder:text-sm focus:outline-none focus:ring-1 focus:ring-[#BA9503]"/>
+
+                        <!-- Confirm Password -->
+                        <input type="password" placeholder="Confirm Password" required class="w-full p-2.5 border border-[#BA9503] rounded-md text-lg placeholder:text-sm focus:outline-none focus:ring-1 focus:ring-[#BA9503]"/>
+
+                        <!-- Company Registration Number -->
+                        <input type="text" placeholder="Enter Registration number (Optional)" class="w-full p-2.5 border border-[#BA9503] rounded-md text-lg placeholder:text-sm focus:outline-none focus:ring-1 focus:ring-[#BA9503]"/>
+
+                        <!-- Referral Code -->
+                        <input type="text" placeholder="Enter referral code (Optional)" class="w-full p-2.5 border border-[#BA9503] rounded-md text-lg placeholder:text-sm focus:outline-none focus:ring-1 focus:ring-[#BA9503]"/>
+
+                        <!-- Register Button -->
+                        <button type="submit" class="w-full p-3 bg-gradient-to-r from-[#BA9503] to-[#544301] text-white font-semibold rounded-md hover:bg-yellow-500 focus:ring-2 focus:ring-yellow-300">Register</button>
+                    </form> 
+               </div>
+        </div>
+   
+        </div>
+    </section>
+
+    <div id="footer" class="mt-12"></div>
+</body>
+</html>
