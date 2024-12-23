@@ -5,24 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahih.ae - Digitize Your Credentials/about</title>
     <!-- link to dist folder -->
+    <title>Sahih.ae - Digitize Your Credentials</title>
+    <link rel="icon" type="image/x-icon" href="/images/faviconcmprsd.png">
+  
+    <!-- CDN for swiper animation of testimonial section-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  
+    <!-- global postcss configuration -->
     <link rel="stylesheet" href="/dist/main.css">
-
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/Animations.css">
+
     <script src="scripts/loadComponent.js" defer></script>
   </head>
 <body>
     <!-- imported navbar -->
     <div id="navbar"></div>
 
-    <section class="flex flex-col md:flex-row items-center justify-between px-8 py-16 bg-gray-50">
+    <!-- section 1 -->
+    <!-- first section of about page -->
+    <section class="flex flex-col md:flex-row items-center justify-between px-8 py-16 ">
         <!-- Left Side: Text and Buttons -->
         <div class="text-center md:text-left md:w-1/2">
             <h1 class="text-4xl md:text-5xl font-bold leading-tight whitespace-nowrap pb-4">
                 Empowering <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e3b607] to-[#a68403]">Credentials</span>, Building 
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e3b607] to-[#a68403]">Trust</span>
             </h1>
-            <p class="text-2xl pb-4">Learn more about our mission, journey, and the people behind the platform.</p>
+            <p class="text-xl pb-4 font-semibold ">Learn more about our mission, journey, and the people behind the platform.</p>
 
             <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 pb-4 pt-6 relative z-10">
                 <div class="relative w-full md:w-auto">
@@ -44,11 +54,149 @@
                 <img
                     src="/images/about-page-section-1-img.jpg"
                     alt="Hero section"
-                    class="max-w-[70%] md:max-w-[70%] lg:max-w-[70%] transform translate-x-4"
+                    class="max-w-[70%] md:max-w-[70%] lg:max-w-[70%] transform translate-x-28 translate-y-12"
                 />
             </picture>
         </div>
     </section>
+
+<!-- section 2  -->
+<!-- Section 2 -->
+<section class="flex flex-col md:flex-row items-center justify-between px-8 py-12 bg-[#F4F1F1]">
+    <!-- Left Side: Text and Features -->
+    <div class="text-center md:text-left md:w-1/2 space-y-6">
+        <!-- Heading with underline -->
+        <div class="text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-bold leading-tight relative pb-4">
+                Who We Are
+                <div class="h-[2px] w-16 bg-gradient-to-r from-[#e3b607] to-[#a68403] mx-auto md:mx-0 mt-2"></div>
+            </h2>
+        </div>
+        <!-- Subheading -->
+        <p class="text-lg text-gray-600 font-medium">
+            We are a digital credentialing platform helping companies issue, validate, and verify certificates seamlessly. 
+            With robust tools for businesses and partners, we ensure authenticity and trust in every credential.
+        </p>
+        <!-- Features with checkboxes -->
+        <div class="space-y-4">
+            <div class="flex items-center">
+                <img src="/images/checkbox.png" alt="Check" class="w-6 h-6 mr-4">
+                <span class="text-gray-800 text-lg font-medium">Seamless Certificate Issuance</span>
+            </div>
+            <div class="flex items-center">
+                <img src="/images/checkbox.png"" alt="Check" class="w-6 h-6 mr-4">
+                <span class="text-gray-800 text-lg font-medium">Global Verification</span>
+            </div>
+            <div class="flex items-center">
+                <img src="/images/checkbox.png"" alt="Check" class="w-6 h-6 mr-4">
+                <span class="text-gray-800 text-lg font-medium">Blockchain-Backed Security</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div class="mt-12 md:mt-0 md:w-1/2 flex justify-center md:justify-end">
+        <picture>
+            <source srcset="/svg/who-we-are-img-aboutpage.svg" type="image/svg+xml">
+            <source srcset="/images/about-page-section-1-img.jpg" type="image/jpeg">
+            <img
+                src="/images/who-we-are-img-aboutpage.png"
+                alt="Hero section"
+                class="max-w-[60%] md:max-w-[60%] lg:max-w-[60%] transform translate-x-28 translate-y-12"
+            />
+        </picture>
+    </div>
+</section>
+
+
+<!-- Section 3 -->
+<section class="flex flex-col md:flex-row items-center justify-between px-8 py-12 bg-white relative">
+    <!-- Heading Centered at the Top -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center pb-2 pt-6 absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
+        Mission, Vision, and Values
+        <span class="absolute bottom-0 left-1/2 md:left-0 w-20 h-1 bg-gradient-to-r from-[#e3b607] to-[#a68403] transform translate-x-[-50%] md:translate-x-0"></span>
+    </h2>
+
+    <!-- Left Side: Mission, Vision, Values -->
+    <div class="md:w-1/2 space-y-6 pt-20 md:pt-16">
+        <!-- Mission -->
+        <div>
+            <h3 class="text-xl font-semibold pb-2">Mission</h3>
+            <p class="text-gray-600 text-base font-medium">
+                To empower organizations with secure, seamless, and scalable digital credentialing solutions, fostering trust and authenticity.
+            </p>
+        </div>
+        <!-- Vision -->
+        <div>
+            <h3 class="text-xl font-semibold pb-2">Vision</h3>
+            <p class="text-gray-600 text-base font-medium">
+                To become the global leader in credentialing, ensuring every certificate is verifiable, reliable, and universally recognized.
+            </p>
+        </div>
+        <!-- Values -->
+        <div>
+            <h3 class="text-xl font-semibold pb-2">Values</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+                <div class="flex flex-col items-center">
+                    <picture>
+                        <source srcset="/svg/groupOne.svg" type="image/svg+xml">
+                        <img src="/images/fallback-image.jpg" alt="Integrity" class="w-10 h-10 mb-2">
+                    </picture>
+                    <span class="text-gray-800 text-sm font-medium">Integrity</span>
+                </div>                
+                <div class="flex flex-col items-center">
+                    <picture>
+                        <source srcset="/svg/groupTwo.svg" type="image/svg+xml">
+                        <img src="/images/fallback-image.jpg" alt="Integrity" class="w-10 h-10 mb-2">
+                    </picture>
+                    <span class="text-gray-800 text-sm font-medium">Innovation</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <picture>
+                        <source srcset="/svg/groupThree.svg" type="image/svg+xml">
+                        <img src="/images/fallback-image.jpg" alt="Integrity" class="w-10 h-10 mb-2">
+                    </picture>
+                    <span class="text-gray-800 text-sm font-medium">User-Centricity</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <picture>
+                        <source srcset="/svg/groupFour.svg" type="image/svg+xml">
+                        <img src="/images/fallback-image.jpg" alt="Integrity" class="w-10 h-10 mb-2">
+                    </picture>
+                    <span class="text-gray-800 text-sm font-medium">Collaboration</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <picture>
+                        <source srcset="/svg/group.svg" type="image/svg+xml">
+                        <img src="/images/fallback-image.jpg" alt="Integrity" class="w-10 h-10 mb-2">
+                    </picture>
+                    <span class="text-gray-800 text-sm font-medium">Security</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side: Overlapping Images -->
+    <div class="md:w-1/2 flex justify-center md:justify-end relative mt-2 md:mt-0">
+        <!-- Background Image -->
+        <div class="relative w-96 h-60">
+            <img
+                src="/images/about-section-3-img.jpg"
+                alt="Background Rectangle"
+                class="absolute w-full h-full  shadow-lg"
+            >
+        </div>
+        <!-- Foreground Image (Top-Right Overlap) -->
+        <div class="absolute top-40 right-60 w-64 h-40">
+            <img
+                src="/images/about-section-2-img.jpg"
+                alt="Foreground Rectangle"
+                class="w-full h-full  shadow-md"
+            >
+        </div>
+    </div>
+</section>
+
 
     <div id="footer"></div>
     <script type="module" src="scripts/Script.js"></script>
