@@ -1,5 +1,9 @@
 const swiper = new Swiper(".mySwiper", {
   loop: true,
+  speed: 1000,
+  autoplay: {
+      delay: 3000,
+  },
   effect: "coverflow",
   centeredSlides: true,
   slidesPerView: "auto", // Show central card clearly
